@@ -4,12 +4,8 @@ from django.shortcuts import render,HttpResponse
 def home(request):
     return render(request, 'home.html')
 
-def about(request):
-    return HttpResponse("This is the about us page")
+def log(request):
+    
+    return render(request, 'log.html')
 
-def Products(request):
-    return HttpResponse("This is the our products page")
-
-def login(request):
-    return HttpResponse("This is the login\signup page")
     

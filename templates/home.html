@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Digital Sakahari home</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
 </head>
 <body>
-    This is my homw with HTML
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="static/image/logo.png" width="125px">
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">Our Products</a></li>
+            <li><a href="">Tharu Community</a></li>
+            <li><a href="">Login/Signup</a></li>
+          </ul>
+          <img src="static/image/cart.png" width="30px" height="30px">
+        </nav>
+        <div class="row">
+          <div class="col-2">   
+            <h1>Make a Different way of shopping<p>Time to switch with the technology</p></h1>    
+            <p>Switch your shopping habit with something extra ordinary</p>
+            <a href="" class="btn">Explore</a>
+          </div>
+          <div class="col-2 img">
+           <img src="static/image/ecom.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <p1>Contact US</p1>
+      </div>
+      <div class="footer-col-2">
+        <p1>Playstore</p1>
+      </div>
+      <div class="footer-col-3">
+        <p1>We Accept</p1>
+      </div>
+      <div class="footer-col-4">
+        <p1>Stay Connected</p1>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
