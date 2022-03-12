@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home'
-]
+]   
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'DigitalSakhari.urls'
 
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'DigitalSakhari.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'digitalsakharidb',
+        'NAME': 'ecom_db',
         'HOST': 'localhost',
-        'ENGIENE': 'digitalsakharidb',
+        'ENGIENE': 'ecom_db',
         'USER': 'root',
         'PASSWORD': '',
         'PORT': '3306',
@@ -126,6 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 STATIC_URL = '/static/'
 
+MEDIA_URL= '/images/'
+
+MEDIA_ROOT= BASE_DIR / 'static'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
@@ -133,3 +138,4 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
